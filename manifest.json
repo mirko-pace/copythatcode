@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "CopyThatCode!",
+    "version": "1.0",
+    "description": "Copies visible content from code blocks",
+    "permissions": ["clipboardWrite"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
